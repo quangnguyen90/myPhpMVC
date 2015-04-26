@@ -1,0 +1,31 @@
+DEVELOPMENT GUIDE
+*********************************************************************************************************************************************
+1- Copy this project to your htdocs
+2- Create your controller in folder "controllers", remember to extends "Controller" & build your functions
+(*) see example.php in folder "controllers" as an example for this step
+3- Test your controller is run or not, try url: localhost/your_project_name/public/your_controller_name/your_function_name
+(*) if your function have some parameters, just add it in your url after your_function_name by "/"
+Ex: localhost/your_project_name/public/your_controller_name/your_function_name/param1/param2/param3
+4- Create your model in folder "models" & build your function
+(*) see demo.php in folder "models" as an example for this step
+5- Load model in controller, just use: $this->load_model('your_model_file_name');
+(*) see demo.php in folder "models" and example.php in folder "controllers" as an example for this step
+Ex: you have an model file name is: demo.php with function "test", in your function in controller, just call it as a below exampple
+	public function testModel(){
+		$x = $this->load_model('demo');
+		echo $x->test();
+	}
+(*) Model class name & Controller class name must be different
+6- Create your view in folder "views" & build your html
+(*) see example.php in folder "views" folder as an example for this step
+7- Load view in controller, just use: $this->load_view('your_view_file_name');
+(*) If you have any parameter you want to show in your view file, just use: $this->load_view('your_view_file_name', $your_variable)
+Ex: 
+	public function testView(){
+		$data["yourName"] = "World";
+		$this->load_view('home/example', $data);
+	}
+And in your view, just show it
+*********************************************************************************************************************************************
+The End
+<Developed by Quang Nguyen Phu - 2015 - From Vietnam with love>
