@@ -7,30 +7,26 @@
 		<title>About</title>
 
 		<!-- Bootstrap CSS -->
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+		<link href="http://localhost/myphpmvc/public/css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery -->
+		<script src="http://localhost/myphpmvc/public/js/jquery-2.1.3.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="http://localhost/myphpmvc/public/js/bootstrap.min.js"></script>
+		
 	</head>
 	<body>
 		<h3 class="text-center">Welcome to My PHP MVC Framework</h3>
 		<div class="container">
+			<?php $this->load_view('layout/header'); ?>
 			<div class="text-center">
 				<h3>ABOUT THIS PROJECT</h3>
 				Develop by Quang Nguyen Phu - 2015 - From Vietname with love
 				<br>
 				This framework is light, easy to use
 				<br>
-				<a href="http://localhost/myphpmvc/public/home/">Back to homepage</a>
+				<a href="http://localhost/myphpmvc/public/home">Back to homepage</a>
 			</div>
+			<?php $this->load_view('layout/footer'); ?>
 		</div>
-		<!-- jQuery -->
-		<script src="//code.jquery.com/jquery.js"></script>
-		<!-- Bootstrap JavaScript -->
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</body>
 </html>

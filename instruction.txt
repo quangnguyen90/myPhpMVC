@@ -4,7 +4,7 @@ DEVELOPMENT GUIDE
 2- Create your controller in folder "controllers", remember to extends "Controller" & build your functions
 (*) see example.php in folder "controllers" as an example for this step
 3- Test your controller is run or not, try url: localhost/your_project_name/public/your_controller_name/your_function_name
-(*) if your function have some parameters, just add it in your url after your_function_name by "/"
+(*) if your function have some parameters, just add it's value in your url after your_function_name by "/"
 Ex: localhost/your_project_name/public/your_controller_name/your_function_name/param1/param2/param3
 4- Create your model in folder "models" & build your function
 (*) see demo.php in folder "models" as an example for this step
@@ -26,6 +26,13 @@ Ex:
 		$this->load_view('home/example', $data);
 	}
 And in your view, just show it
+8- CRUD Example
+	- Model: See demo.php in app/models/
+	- Controller: see example.php in app/controllers/
+	- View: see example.php & example_read.php in app/views/home/
+	- Javascript: see example.js & example_evt.js in public/js/examplejs
+	- DB demo: see myphpmvc.sql in db/
+	- DB config: see DBconnect.php in app/common
 *********************************************************************************************************************************************
 The End
 <Developed by Quang Nguyen Phu - 2015 - From Vietnam with love>
