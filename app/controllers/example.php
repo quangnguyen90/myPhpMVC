@@ -10,7 +10,7 @@ class Example extends Controller
 	public function index(){
 		$data = array();
 		$data["yourName"] = "World";
-		$this->load_view('home/example', $data);
+		$this->load_view('example/example', $data);
 	}
 	//=====================================================================================================================================================
 	/**
@@ -38,7 +38,7 @@ class Example extends Controller
 		$data = array();
 		$data['info'] = $x->select();
 		$data["yourName"] = "World";
-		$this->load_view('home/example', $data);
+		$this->load_view('example/example', $data);
 		//echo json_encode($data);
 	}
 
@@ -58,7 +58,7 @@ class Example extends Controller
 		else
 			$data['info'] = null;
 
-		$this->load_view('home/example_read', $data);
+		$this->load_view('example/example_read', $data);
 	}
 
 	//=====================================================================================================================================================
