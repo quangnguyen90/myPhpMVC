@@ -19,6 +19,7 @@
 	?>
 </head>
 <body>
+	<?php require_once '../app/libraries/language.php';?>
 	<div class="container">
 		<!-- HEADER -->
 		<?php require_once '../app/views/layout/header.php';?>
